@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+  resulte='';
+  getAction(item:any){
+    this.resulte+=item;
+
+  }
+  equal(){
+    this.resulte=eval(this.resulte);
+  }
+  reset(){
+    this.resulte='';
+  }
+
+
   title = 'Calculator';
 }
